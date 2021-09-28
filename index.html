@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="confirm-banner">
+        <div>
+          <i class="fas fa-check-circle"></i>
+          <p class="confirm-text">Thank you for contacting us,&nbsp</p>
+          <p id="user-Name"></p>
+        </div>
+
+        <i class="fas fa-times remove"></i>
+      </div>
+
+      <div class="contact-form">
+        <form action="" id="form">
+          <div class="name">
+            <input class="first-name" type="text" placeholder="First Name" />
+          </div>
+
+          <div class="name">
+            <input class="last-name" type="text" placeholder="Last Name" />
+          </div>
+
+          <label for="">Gender</label>
+
+          <div class="gender">
+            <input type="radio" name="gender" id="men" class="gender-class" />
+            <label for="men">M</label>
+          </div>
+
+          <div class="gender">
+            <input
+              type="radio"
+              name="gender"
+              id="women"
+              class="gender-class"
+              checked
+            />
+            <label for="women">F</label>
+          </div>
+
+          <div class="textarea-div">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="8"
+              placeholder="Your message here...."
+            ></textarea>
+          </div>
+
+          <div class="btn">
+            <button type="button" id="btn" onclick="validateForm()">
+              Submit
+            </button>
+          </div>
+        </form>
+
+        <div class="img"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
